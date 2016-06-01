@@ -38,7 +38,7 @@ public class WebUtilitiesCollection{
 			case "all":
 				System.out.println("Saving and minifing css & js.");
 				Javascript.loadAll();
-				Javascript.minifyAll();
+//				Javascript.minifyAll(); Some errors.
 				Javascript.saveAll();
 				Less.loadAll();
 				Less.compileAll();
