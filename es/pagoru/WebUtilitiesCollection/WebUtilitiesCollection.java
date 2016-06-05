@@ -60,12 +60,19 @@ public class WebUtilitiesCollection{
 			case "js":
 				System.out.println("Saving js.");
 				Javascript.loadAll();
-				Javascript.minifyAll();
+//				Javascript.minifyAll(); TODO Arreglar esta chapuza.
 				Javascript.saveAll();
 				System.out.println("js saved.");
 				break;
 				
 			case "css":
+				System.out.println("Saving css.");
+				Less.loadAll();
+				Less.compileAll();
+				Less.saveAll();
+				System.out.println("css saved.");
+				break;
+			case "css-min":
 				System.out.println("Saving css.");
 				Less.loadAll();
 				Less.compileAll();

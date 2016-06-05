@@ -22,6 +22,7 @@ public class Javascript {
 	
 	private static List<Javascript> jss = new ArrayList<Javascript>();
 	
+	@Deprecated
 	public static void minifyAll(){
 	    for(Javascript l : jss){
 		    l.minify();
@@ -68,7 +69,7 @@ public class Javascript {
 			File f = new File(fromPath);
 			Scanner s = new Scanner(new FileInputStream(f));
 			while(s.hasNext()){
-				text += s.nextLine();
+				text += s.nextLine() + "\n";
 			}
 			s.close();
 		} catch (FileNotFoundException e) {

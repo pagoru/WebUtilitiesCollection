@@ -77,7 +77,7 @@ public class Less {
 			File f = new File(fromPath);
 			Scanner s = new Scanner(new FileInputStream(f));
 			while(s.hasNext()){
-				text += s.nextLine();
+				text += s.nextLine() + "\n";
 			}
 			s.close();
 		} catch (FileNotFoundException e) {
