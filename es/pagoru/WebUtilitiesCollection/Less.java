@@ -42,6 +42,7 @@ public class Less {
     }
     public static void loadAll(){
 		File f = new File(FROM_PATH);
+		lesss.clear();
 		for (File actual : f.listFiles()) {
 			lesss.add(new Less(
 							FROM_PATH + actual.getName(), 

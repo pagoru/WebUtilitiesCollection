@@ -35,6 +35,7 @@ public class Javascript {
     }
     public static void loadAll(){
 		File f = new File(FROM_PATH);
+		jss.clear();
 		for (File actual : f.listFiles()) {
 			jss.add(new Javascript(
 							FROM_PATH + actual.getName(), 
